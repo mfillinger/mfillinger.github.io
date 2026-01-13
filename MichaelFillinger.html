@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Michael Fillinger – Introduction </title>
+<style>
+  :root{
+    --text:#111;
+    --muted:#555;
+    --accent:#0b5fff;
+    --rule:#e5e7eb;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font: 14.5px/1.45 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    color:var(--text);
+    background:#fff;
+  }
+  .page{
+    max-width: 800px;
+    margin: 28px auto 56px;
+    padding: 28px 36px;
+  }
+  header{
+    text-align:center;
+    margin-bottom: 14px;
+  }
+  h1{
+    font-size: 28px;
+    letter-spacing:.3px;
+    margin: 0 0 6px 0;
+    font-weight: 750;
+  }
+  .contact{
+    font-size: 13.5px;
+    color:var(--muted);
+    display:flex; gap:12px; flex-wrap:wrap; justify-content:center;
+  }
+  .contact a{color:var(--muted); text-decoration:none; border-bottom:1px dotted transparent}
+  .contact a:hover{color:var(--accent); border-bottom-color:var(--accent)}
+  hr{
+    border:0; border-top: 2px solid var(--rule); margin: 14px 0 18px;
+  }
+  h2{
+    font-size: 14.5px;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    margin: 18px 0 6px;
+    padding-top: 4px;
+    border-top: 0 solid transparent;
+  }
+  .tagline{
+    font-weight: 700; color:#222; margin-bottom:6px;
+  }
+  .blurb{color:#222; margin:0 0 10px}
+  .grid{
+    display:grid; 
+    grid-template-columns: 1fr;
+    gap:10px 20px;
+  }
+  .item h3{
+    margin: 0 0 2px; font-size: 14.5px;
+  }
+  .sub{
+    color:var(--muted); font-size: 13.5px; margin-bottom: 6px;
+  }
+  ul{
+    margin: 6px 0 10px 18px;
+  }
+  li{margin: 4px 0}
+  .skills{
+    columns: 2; column-gap: 24px;
+  }
+  .skills p{break-inside: avoid; margin: 6px 0}
+  .skill-head{font-weight:700}
+  .pill{
+    display:inline-block; padding:.1rem .45rem; border:1px solid var(--rule); border-radius:999px; margin:2px 4px 0 0; font-size: 12.5px; color:#333
+  }
+  /* Print tweaks */
+  @media print{
+    body{background:#fff}
+    .page{box-shadow:none; margin:0; padding:0}
+    a{color:inherit; text-decoration:none}
+  }
+</style>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Resume: Michael Fillinger">
+    <header>
+      <h1>Michael Fillinger</h1>
+      <div class="contact">
+        <a href="tel:+12485551234" aria-label="Phone">(248) 555-1234</a>
+        <span>•</span>
+        <a href="mailto:mfillinger@oakland.edu">mfillinger2@oakland.edu</a>
+        <span>•</span>
+        <a href="https://github.com/mfillinger" target="_blank" rel="noreferrer">GitHub.com/mfillinger</a>
+        <span>•</span>
+        <a href="https://mfillinger.github.io/MichaelFillingerCV" target="_blank" rel="noreferrer">mfillinger.github.io/MichaelFillingerCV</a>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- Career Focus -->
+    <section aria-labelledby="career-focus">
+      <h2 id="career-focus">Career Focus: Software Engineer / AI & Systems Developer</h2>
+      <p class="blurb">
+        Motivated Computer Science student and Co-op Engineer with hands-on experience in technical QA, system validation, and cross team engineering support. Skilled in Python, Java, and applied AI concepts, with a strong interest in building reliable systems and practical, real world solutions. Eager to apply my programming skills, problem solving mindset, and continue gaining industry experience. 
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="item">
+        <h3>Bachelor of Science in Computer Science w/ a Specialization in AI</h3>
+        <div class="sub">Oakland University, Rochester, MI — <strong>Expected Graduation: May 2026</strong></div>
+      </div>
+    </section>
+
+    <!-- Course Projects -->
+    <section aria-labelledby="projects">
+      <h2 id="projects">Course Projects</h2>
+
+      <div class="item">
+        <h3>Forest Cover Type Prediction <span class="sub">(CSI 5810 - Information Retrieval & Knowledge Discovery)</span></h3>
+        <ul>
+          <li>Analyzed a large scale environmental dataset using Python and scikit-learn.</li>
+          <li>Preprocessed terrain and soil features with scaling, PCA, and class-imbalance handling.</li>
+          <li>Implemented and compared k-NN, Logistic Regression, Naïve Bayes, and LDA.</li>
+          <li>Achieved ~78% accuracy with k-NN and identified key predictive features.</li>
+          <li>Built a Streamlit App supporting single-record and batch predictions.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Weather Application <span class="sub">(CSI 3370 - Software Engineering & Practice)</span></h3>
+        <ul>
+          <li>Developed a cross-platform weather app using flutter.</li>
+          <li>Integrated WeatherAPI to provide detailed metrics.</li>
+          <li>Implemented user preferences such as dark mode, temperature unit toggling and other accessibility options.</li>
+          <li>Optimized performance and reliability.</li>
+          <li>Secured sensitive data using .env files.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3>Text Mining of Best Buy Reviews <span class="sub">(CSI 5810 - Information Retrieval & Knowledge Discovery)</span></h3>
+        <ul>
+          <li>Scraped Logitech Astro A50X costumer reviews from BestBuy.com using Python, Requests, & BeautifulSoup.</li>
+          <li>Cleaned and prepared text data through normalization, noise removal, and sentiment labeling.</li>
+          <li>Converted review text into numerical features using TF-IDF vectorization.</li>
+          <li>Trained Naïve Bayes and Logistic Regression models for sentiment classification with high accuracy.</li>
+          <li>Addressed dynamic HTML structure and dataset imbalance during preprocessing and model evaluation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Relevant Experience -->
+    <section aria-labelledby="relevant-exp">
+      <h2 id="relevant-exp">Relevant Experience</h2>
+
+      <div class="item">
+        <h3>CO-OP Engineer DTE | Blue Water Energy Center, East China, MI</h3>
+        <div class="sub">Aug 2025 – Present</div>
+        <ul>
+          <li>Built a complete electrical load list by documenting voltage, ratings, and feed connections across plant equipment.</li>
+          <li>Revised and corrected drawings in Documentum and created QR codes for field access to reduce workflow errors.</li>
+          <li>Identified HRSG insulation types and mapped their locations; estimated stocking quantities based on system coverage.</li>
+          <li>Strengthened accuracy and traceability by validating specs, resolving discrepancies, and collaborating with field engineers.</li>
+          <li>Currently developing an AI search system to streamline document access, reduce lookup time, and improve field efficiency compared to our current document system.</li>
+        </ul>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
